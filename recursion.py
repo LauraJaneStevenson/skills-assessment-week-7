@@ -30,13 +30,12 @@ class Node(object):
         cherry
 
         """
+        node = self
+        print(node.data)
+        if node.next != None:
 
-        # TODO: Complete this method
-        # pass
+            node.next.traverse_recursively()
 
-
-#####################################################################
-# END OF ASSIGNMENT: You can ignore everything below.
 
 if __name__ == "__main__":
     import doctest
