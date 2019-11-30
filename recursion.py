@@ -32,6 +32,7 @@ class Node(object):
         """
         
         print(self.data)
+        
         if self.next != None:
 
             self.next.traverse_recursively()
