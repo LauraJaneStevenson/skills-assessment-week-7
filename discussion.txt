@@ -14,11 +14,7 @@ Discussion
 
   Explain your answer.
 
-
-
-
-
-
+ C. a doubly linked list. Singly linked list have a runtime of O(1) when adding and removing items from the beginning however have a runtime of O(n) when adding to the end, because they must loop through the entire list to find the second to last node. Normal python lists have an O(1) runtime when appending to the end but a O(n) runtime when adding to the beginning because all items must shift down one space. A doubly linked list is the best options because both adding to the beginning and to the end is a runtime complexity of O(1).
 
 
 2. Which would be the most efficient data structure for a data set with the
@@ -34,10 +30,7 @@ Discussion
 
   Explain your answer.
 
-
-
-
-
+  B. A dictionary is the best option, as long as you don’t need to store duplicate items, because a dictionary implements hashing, making order unimportant, and looking up items a runtime complexity of O(1).
 
 
 
@@ -45,34 +38,33 @@ Discussion
    dictionary or hash map are all O(1) operations.
 
 
-
+  If you have an item’s index, python is able to jump directly to that index, for a runtime complexity of O(1). Dictionaries and sets take the hash of a given item, then use an operation to generate an item’s index. When you check if an item is in the dictionary, python creates a hash of that item, and goes directly to that index in the dictionary, rather than looping through each item.  
 
 
 
 4. Explain why removing elements from or adding elements to an arbitrary
    location in a Python list are O(n) operations.
 
-
-
-
-
+   Because the each item has to move up or down one index to accomidate for that item. Worst case scenario, all items have to move over by one, making the program perform n number of operations.  
 
 
 5. What is the correct runtime for:
 
   - Bubble Sort?
+    O(n^2)
 
   - Quicksort?
+  O(n log n)
 
   - Merge Sort?
+  O(n)
 
   - Insertion Sort?
+  O(n^2)
 
 
 6. What is the difference between a tree and a graph?
-
-
-
+  a Tree is heirarchicle, only having connections downwards, where as a graph is not. 
 
 
 7. Using the Python implementation of Quicksort from the instructions:
@@ -81,12 +73,20 @@ Discussion
   When this function is initially called, what are the values of:
 
     - lst -
+    original: [8, 4, 1, 6, 5, 2, 7, 3]
+    
+    after first pass: [4,1,5,2,3,6,8,7]
+    
+   
 
     - pivot -
+    - 6
 
     - lo -
+    4,1,5,2,3,
 
     - hi -
+    8,7
 
 
 
@@ -94,9 +94,13 @@ Discussion
   values of:
 
   - lst -
+  [4,1,5,2,3]
 
   - pivot -
+  5
 
   - lo -
+  4,1,2,3
 
   - hi -
+  []
