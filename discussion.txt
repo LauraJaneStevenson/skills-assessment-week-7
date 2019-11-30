@@ -1,0 +1,102 @@
+Discussion
+----------
+
+1. Which would be the most efficient data structure for a data set with the
+   following requirements:
+
+  - frequently removing and adding items to the beginning of the data structure
+
+  - frequently removing and adding items to the end of the data structure
+
+  - rarely indexing and searching
+
+  A. A Python list B. Singly linked list C. Doubly linked list
+
+  Explain your answer.
+
+
+
+
+
+
+
+
+2. Which would be the most efficient data structure for a data set with the
+   following requirements:
+
+  - order is unimportant
+
+  -frequently adding and removing items
+
+  - frequently looking up items
+
+  A. A Python list  B. A Dictionary  C. Deque  D. Binary Search Tree
+
+  Explain your answer.
+
+
+
+
+
+
+
+
+3. Explain why looking up, adding elements, and removing elements from a 
+   dictionary or hash map are all O(1) operations.
+
+
+
+
+
+
+4. Explain why removing elements from or adding elements to an arbitrary
+   location in a Python list are O(n) operations.
+
+
+
+
+
+
+
+5. What is the correct runtime for:
+
+  - Bubble Sort?
+
+  - Quicksort?
+
+  - Merge Sort?
+
+  - Insertion Sort?
+
+
+6. What is the difference between a tree and a graph?
+
+
+
+
+
+7. Using the Python implementation of Quicksort from the instructions:
+
+  Given the list [8, 4, 1, 6, 5, 2, 7, 3]:
+  When this function is initially called, what are the values of:
+
+    - lst -
+
+    - pivot -
+
+    - lo -
+
+    - hi -
+
+
+
+  When the quicksort is first called recursively on the `lo` list, what are the
+  values of:
+
+  - lst -
+
+  - pivot -
+
+  - lo -
+
+  - hi -
