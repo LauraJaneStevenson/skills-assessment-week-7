@@ -30,11 +30,11 @@ class Node(object):
         cherry
 
         """
-        node = self
-        print(node.data)
-        if node.next != None:
+        
+        print(self.data)
+        if self.next != None:
 
-            node.next.traverse_recursively()
+            self.next.traverse_recursively()
 
 
 if __name__ == "__main__":
